@@ -15,10 +15,6 @@ const nextConfig = {
       ],
     }
   },
-  experimental: {
-    optimizeCss: true,
-    optimizePackageImports: ['@your-shared-components']
-  }
 }
 
 module.exports = nextConfig 
