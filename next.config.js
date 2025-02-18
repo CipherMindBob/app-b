@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   basePath: '/blog',
   assetPrefix: process.env.NODE_ENV === 'production' 
-    ? 'https://your-cdn-domain.com/blog' 
+    ? `${process.env.NEXT_PUBLIC_BLOG_URL}/blog`
     : '/blog',
   async rewrites() {
     return {
